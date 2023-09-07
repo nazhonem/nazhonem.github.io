@@ -1,0 +1,40 @@
+#site {
+    padding:0% 5%;
+}
+
+#header {
+    padding:5% 15%;
+    overflow: hidden; 
+}
+#name-block {
+    width: 300px;
+    float:left;
+}
+#image-block {
+    float:right;
+}
+#profile-img {
+    border-radius: 8px;
+}
+img:hover {
+    box-shadow: 0 0 4px 2px plum;
+}
+
+#other-info {
+    border:ridge plum 2px;
+    border-radius: 8px;
+    position:relative;
+    margin:0% 20%;
+    padding:5%
+}
+#goals {
+    display: flex;
+    justify-content: center;
+}
+#list {
+    padding-left: 30%;
+}
+#video {
+    display: flex;
+    justify-content: center;
+}
