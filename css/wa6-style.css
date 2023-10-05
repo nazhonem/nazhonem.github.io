@@ -1,0 +1,37 @@
+.overlay {
+    width: 75vw;
+    height: 75vh;
+    background-color: antiquewhite;
+
+    background-image: url(../img/ring-ad.jpg);
+    background-repeat: no-repeat;
+
+    position: absolute;
+}
+.top-ad {
+    /* background-color: rgba(0,0,0,0.5); */
+    background-image: linear-gradient(to bottom, rgba(231, 67, 67, 0.9), rgba(0,0,0,0));
+    color:white;
+
+    width: 175px;
+    height: 350px;
+    
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.banner {
+    background-color: rgba(0,0,0,0.5);
+    color:white;
+    border: dotted yellow 10px;
+
+    width: 500px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 50px;
+    left: 25%;
+}
+.text {
+    text-align: center;
+}
