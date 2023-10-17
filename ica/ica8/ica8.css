@@ -1,20 +1,76 @@
 body{
     background-color: khaki;
 }
-#box1{
+#box1 {
     width: 25vw;
     height: 20vh;
     background-color: indianred;
 }
+#box1:hover {
+    background-color: purple;
+}
 
 
-#box2{
+#box2 {
     width: 25vw;
     height:20vh;
     position: relative;
     background-color: orangered;
+
+    /* Animation */
+    animation-duration: 2s;
+    animation-name: box2move;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
 }
 
-@keyframes box2move{
-
+@keyframes box2move {
+    /* Start at top corner */
+    from {
+        margin-left: 5%;
+        margin-top: 0%;
+        /* height: 100px; */
+        animation-timing-function: ease-in;
+    }
+    /* hit bottom */
+    15% {
+        margin-left: 10%;
+        margin-top: 10%;
+        /* height: 90px; */
+        animation-timing-function: ease-out;
+    }
+    /* bounce back up */
+    30% {
+        margin-left: 15%;
+        margin-top: 5%;
+        /* height: 100px; */
+        animation-timing-function: ease-in;
+    }
+    /* hit bottom again */
+    45%{
+        margin-left: 20%;
+        margin-top: 10%;
+        /* height: 90px; */
+        animation-timing-function: ease-out;
+    }
+    /* bounce back up */
+    60% {
+        margin-left: 25%;
+        margin-top: 2.5%;
+        /* height: 100px; */
+        animation-timing-function: ease-in;
+    }
+    /* hit bottom again */
+    75% {
+        margin-left: 30%;
+        margin-top: 10%;
+        /* height: 90px; */
+        animation-timing-function: ease-out;
+    }
+    /* slide across */
+    to{
+        margin-left: 35%;
+        margin-top: 10%;
+        /* height: 100px; */
+    }
 }
