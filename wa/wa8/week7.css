@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b23c3c;
+    color: #422b3b;
+    font-family: Josefin Sans;
+}
+nav{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:20px;
+    background-color: #d35a47;
+}
+nav a{
+    width:10vw;
+    text-align: center;
+    text-decoration: none;
+    color:#f6db7b;
+    transition: 0.3s;
+}
+a:hover {
+    background-color: #e5704f;
+}
+
+
+#img-blur{
+    width:30vw;
+    padding: 20px;
+    transition: 0.5s;
+}
+#img-blur:hover{
+    filter: blur(5px);
+}
+
+#img-gif {
+    rotate: 90deg;
+    height: 15%;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top: -15px;
+    filter: hue-rotate(190deg) opacity(90%);
+
+    /* Animation */
+    animation-duration: 5s;
+    animation-name: moveAcross;
+    animation-iteration-count: infinite;
+}
+@keyframes moveAcross{
+    from{left:-15%;}
+    to{left:100%;}
+}
+
+#red-ball{
+    background-color: #422b3b;
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    position: absolute;
+    left:5vw;
+    top:0;
+}
+
+/* background: 422b3b 
+ * dark orange: b23c3c
+ * medium orange: d35a47
+ * light orange: e5704f
+ * yellow: f5d67b
+ * red: d44967
+ */
