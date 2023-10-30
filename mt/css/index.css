@@ -1,0 +1,124 @@
+body {
+    background-color: #a91538;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* page-head */
+#page-head {
+    background: url("img/Boettcher-Concert-Hall.jpg") #36041c84;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 10vw;
+}
+
+#page-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+#page-caption {
+    font-size: 120%;
+}
+
+/* event-list */
+#event-list {
+    padding: 20px 5vw;
+}
+
+.event {
+    background-color: #f5f4e0;
+    border-radius: 10px;
+}
+
+.event-title {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.event-times {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+}
+
+.event-subtitle {
+    font-family: 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 2% 0 0.5% 0;
+    margin-top: 2%;
+}
+
+.event-artists {
+    padding: 0 0 0 5%;
+    margin:0;
+}
+
+.event-rep3, .event-rep2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+}
+
+/* LARGE SCREEN */
+@media screen and (min-width: 500px) {
+    .event {
+        padding: 4% 3vw;
+        margin: 2% 0;
+    }
+
+    .event-times li {
+        flex-basis: 20%;
+    }
+    .event-times .event-date {
+        flex-basis: 100%;
+    }
+    
+    .event-rep3, .event-rep2 {
+        flex-wrap: wrap;
+    }
+    .event-rep3 li {
+        flex-basis: 33%;
+    }
+    .event-rep2 li {
+        flex-basis: 50%;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 500px) {
+    .event {
+        padding: 8% 4vw;
+        margin: 2% 0;
+    }
+
+    .event-rep3, .event-rep2 {
+        padding: 0;
+        flex-flow: column wrap;
+    }
+
+    .event-rep3 {
+        height: 250px;
+    }
+    .event-rep2 {
+        height: 150px;
+    }
+
+    .event-rep3 li {
+        flex-basis: 33%;
+        width: 40vw;
+    }
+    .event-rep2 li {
+        flex-basis: 50%;
+        width: 40vw;
+    }
+}
