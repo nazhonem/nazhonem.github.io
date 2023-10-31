@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICA 10</title>
+</head>
+<body>
+    <p id="txt">Hello, world!</p>
+
+    <button id="change-color">Change color</button>
+    <button id="change-font">Change font</button>
+
+    <script>
+        document.getElementById("change-font").addEventListener("click", function() {
+            var txt = document.getElementById("txt");
+            txt.style.fontFamily="Arial, sans-serif";
+        });
+        document.getElementById("change-color").addEventListener("click", function() {
+            var txt = document.getElementById("txt");
+            txt.style.color="red";
+        });
+    </script>
+</body>
+</html>
