@@ -22,6 +22,7 @@ body {
     color: white;
     padding: 10px;
     visibility: hidden;
+    border-radius: 10px;
   }
 
   #form {
