@@ -1,0 +1,54 @@
+h1 {
+  /* font-family: helvetica, arial, sans-serif; */
+  font-family: 'Trebuchet MS', sans-serif;
+  color: white;
+  /* text-align: center; */
+}
+
+body {
+  background-color: #a91538;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  width: 640px;
+  margin: 0 auto;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 640px;
+  height: 640px;
+}
+.displayed-img {
+  width: 640px;
+  height:640px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 640px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  background: rgba(237, 172, 172, 0.4);
+  text-shadow: 1px 1px 1px white;
+  border: 1px solid #999;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}
