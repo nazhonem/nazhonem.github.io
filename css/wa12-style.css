@@ -11,8 +11,10 @@ html {
   }
   
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    background-color: #c9bd95;
+    background-color: #a91538;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   .app {
@@ -42,7 +44,9 @@ html {
   .quote-text {
     padding-bottom: 20px;
     font-size: 25px;
-    color: black;
+  }
+  .p-text {
+    color: #a91538;
   }
   
   .controls {
@@ -64,27 +68,31 @@ html {
   }
   
   .twitter {
-    background-color: #1da1f2;
+    background-color: #a91538;
     text-decoration: none;
+    margin-bottom: 15px;
   }
   
   .twitter:hover {
-    background-color: #1e7fbb;
+    background-color: #8a0f2b;
   }
   
   .new-quote {
-    background-color: #4A2B0F;
+    background-color: #4a0f0f;
     margin-bottom: 15px;
   }
   
   .new-quote:hover {
-    background-color: #6d3b0e;
+    background-color: #8a0f2b;
   }
-  
-  .new-quote:disabled {
-    background-color: #cccccc;
-    color: #666666;
-    cursor: not-allowed;
+
+  .list {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  .changes {
+    width: 100%;
+    padding: 20px 50px;
   }
   
   @media screen and (max-width: 600px) {

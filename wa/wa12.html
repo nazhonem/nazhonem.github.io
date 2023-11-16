@@ -9,19 +9,30 @@
 </head>
 <body>
     <div class="app">
-        <header>Random Christmas Trivia</header>
+        <header>Random Programming Jokes</header>
         <section class="quotes">
           <div class="quote-text" id="js-quote-text"></div>
-          <div class="quote-text" id="js-answer-text"></div>
+          <div class="quote-text p-text" id="js-answer-text"></div>
         </section>
         <section class="controls" >
           <button type="button" id="js-new-quote" class="new-quote button">
-            Generate a new bit of trivia!
+            Generate a programming joke!
           </button>
           <button type="button" id="js-tweet" class="twitter button">
-            Show me the answer!
+            Show me the punchline!
+          </button>
+          <button type="button" id="js-save" class="twitter button">
+            Save to your list!
           </button>
           <!-- <a class="answer button" id="js-tweet" target="_blank" rel="noreferrer">Show me the answer!</a> -->
+        </section>
+        <section class="list">
+            <ul id="js-terrible-jokes">
+            </ul>
+        </section>
+        <section class="changes">
+          <h2>Things Changed:</h2>
+          <p>I changed the Cristmas trivia API to a joke generator and used the programming-specific API. I made a new button that allows you to save the setup and punchline to a list below the buttons.</p>
         </section>
       </div>
       <script src="../js/wa12.js"></script>

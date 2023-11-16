@@ -1,9 +1,13 @@
-const endpoint = 'https://trivia.cyberwisp.com/getrandomchristmasquestion';
-
+const endpoint = 'https://official-joke-api.appspot.com/jokes/programming/random';
 const qstText = document.querySelector('#js-quote-text');
 const ansText = document.querySelector('#js-answer-text');
+const sveList = document.querySelector('#js-terrible-jokes')
 const qstBtn = document.querySelector('#js-new-quote');
 const ansBtn = document.querySelector('#js-tweet');
+const sveBtn = document.querySelector('#js-save');
+let savedCount = 0;
+let jsonQ = '';
+let jsonA = '';
 
 qstBtn.addEventListener('click', async () => {
     ansText.textContent = '';
@@ -13,10 +17,13 @@ qstBtn.addEventListener('click', async () => {
             throw Error(response.statusText);
         }
         const json = await response.json();
-        qstText.textContent = json['question'];
+        jsonQ = json[0]['setup'];
+        jsonA = json[0]['punchline'];
+
+        qstText.textContent = jsonQ;
 
         ansBtn.addEventListener('click', () => {
-            ansText.textContent = json['answer'];
+            ansText.textContent = jsonA;
         });
     }
     catch(err) {
@@ -27,44 +34,15 @@ qstBtn.addEventListener('click', async () => {
 
 qstBtn.click();
 
-/* API Guide used to help me implement authentication: https://publicapis.io/genius-api */
+sveBtn.addEventListener('click', () => {
+    let qli = document.createElement('li')
+    qli.appendChild(document.createTextNode(jsonQ));
+    sveList.appendChild(qli);
 
-/* Information to get access token */
-const clientId = '-VoLywFfqAYzV-N-zx0qK49Hv-nP-m4VHLSM0MnF2LZAjiX-rESsNg2kigSkoNgE';
-const clientSecret = '3ZaWinZ4yROelrkg_3Rvf9brbDR_E-xL4BCec0HdwA9eSLL91jYBfHRZ9COEsvonTqc4lF5OoqtVJtF3_RtpVA';
-const authUrl = 'https://api.genius.com/oauth/token';
-const authHeaders = {
-  'Content-Type': 'application/x-www-form-urlencoded',
-  Authorization: `Basic ${btoa(`${clientId}:${clientSecret}`)}`,
-};
-const authData = {
-  grant_type: 'client_credentials',
-};
-
-/* fetch auth token */
-async function getAuthTok() {
-    const authToken = await fetch(authUrl, {
-        method: 'POST',
-        headers: authHeaders,
-        body: new URLSearchParams(authData),
-    }).then((response) => response.json()).then((data) => data.access_token);
-    console.log(authToken)
-}
-getAuthTok();
-
-authToken = 'h0BlFNonxNzRjKADem6MUM3bto2RxnlIMIDaY8Y4CgjCTOSjYHpnEYiXH3UvajIK';
-
-const searchTerm = 'Kendrick Lamar';
-const searchUrl = `https://api.genius.com/search?q=${encodeURIComponent(searchTerm)}`;
-const searchHeaders = {
-  Authorization: `Bearer ${authToken}`,
-};
-
-async function getSearch() {
-    const searchResults = await fetch(searchUrl, {
-        headers: searchHeaders,
-    }).then((response) => response.json()).then((data) => data.response.hits);
-    console.log(searchResults);
-}
-
-
+    /* Nest answer */
+    let aul = document.createElement('ul')
+    let ali = document.createElement('li')
+    ali.appendChild(document.createTextNode(jsonA));
+    aul.appendChild(ali);
+    sveList.appendChild(aul);
+});
