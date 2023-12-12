@@ -153,3 +153,8 @@ sizeBtn.addEventListener('click', function() {
         button.size -= 10;
     }
 });
+
+const submitBtn = document.getElementById('submitBtn');
+submitBtn.addEventListener('click', function() {
+    alert('Your phone number:' + numbers);
+});
