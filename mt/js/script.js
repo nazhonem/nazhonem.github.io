@@ -118,8 +118,7 @@ function clearAllNumbers() {
 
 function updateOutput() {
     const outputDiv = document.getElementById('output');
-    displayNum = formatPhoneNumber(numbers.toString());
-    outputDiv.textContent = 'Your Number: ' + displayNum;
+    outputDiv.textContent = 'Your Number: ' + numbers.join('');
 }
 
 function loop() {
