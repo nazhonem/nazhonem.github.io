@@ -1,8 +1,8 @@
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
-const width = (canvas.width = window.innerWidth-100);
-const height = (canvas.height = window.innerWidth-100);
+const width = (canvas.width = window.innerHeight-150);
+const height = (canvas.height = window.innerHeight-150);
 
 function random(min, max) {
     const num = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -118,7 +118,8 @@ function clearAllNumbers() {
 
 function updateOutput() {
     const outputDiv = document.getElementById('output');
-    outputDiv.textContent = 'Your Number: ' + numbers.join('');
+    displayNum = formatPhoneNumber(numbers.toString());
+    outputDiv.textContent = 'Your Number: ' + displayNum;
 }
 
 function loop() {
@@ -154,7 +155,18 @@ sizeBtn.addEventListener('click', function() {
     }
 });
 
+// used stack overflow for this one
+function formatPhoneNumber(phoneNumberString) {
+    var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+    var match = cleaned.match(/^(\d{3})(\d{3})(\d{4})$/);
+    if (match) {
+      return '(' + match[1] + ') ' + match[2] + '-' + match[3];
+    }
+    return 'Invalid Phone Number!!';
+}
+
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', function() {
-    alert('Your phone number:' + numbers);
+    alertMsg = formatPhoneNumber(numbers.toString());
+    alert('Your phone number? ' + alertMsg);
 });
