@@ -168,5 +168,5 @@ function formatPhoneNumber(phoneNumberString) {
 const submitBtn = document.getElementById('submitBtn');
 submitBtn.addEventListener('click', function() {
     alertMsg = formatPhoneNumber(numbers.toString());
-    alert('Your phone number? ' + alertMsg);
+    alert('You entered: ' + alertMsg);
 });
