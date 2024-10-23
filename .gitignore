@@ -1,0 +1,44 @@
+# Node.js / TypeScript (Frontend)
+node_modules/
+dist/
+*.log
+*.lock
+
+# Tailwind CSS build files
+*.css.map
+
+# React specific files
+build/
+coverage/
+
+# TypeScript specific
+*.tsbuildinfo
+
+# IDE settings
+.vscode/
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Java / Spring Boot (Backend)
+target/
+*.jar
+*.war
+*.class
+
+# Maven / Gradle specific
+.mvn/
+.gradle/
+build/
+
+# Logs
+*.log
+
+# Spring Boot environment properties
+*.env
+.env.local
+.env.production
+application.properties
+application.yml
