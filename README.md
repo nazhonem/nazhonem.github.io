@@ -12,6 +12,7 @@ Typescript with Tailwind CSS Styling and React framework.
 Java with Spring Boot framework.
 - Java is used by many companys in industry and works well with js/ts.
 - Spring Boot simplifies the setup/config of Java apps and overhauls the backend work.
+    - Spring Boot 3.3.4 initialized with Gradle - Groovy in Java 17
 
 ## Middleware
 Interaction between front and backend done particularly with RESTful APIs.
