@@ -5,6 +5,7 @@ A website displaying all my accomplishments past and present.
 Typescript with Tailwind CSS Styling and React framework.
 - TS chosen for static typing and cleaner code with bug checking.
 - Tailwind chosen for efficiency.
+    - NextUI also used for components.
 - React chosen for prebuilt components, state management, and overall faster development.
 - (Future addition) Bundling with Parcel for optimization.
 
