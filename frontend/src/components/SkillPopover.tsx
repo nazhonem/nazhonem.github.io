@@ -9,38 +9,40 @@ export default function SkillsPopover() {
   return (
     <div>
       <ul>
-        {skills.map((skill) => (
-          <li key={skill.id}>
-            <Popover placement="right">
-                <PopoverTrigger>
-                    <Button>
-                        <img 
-                            className="projectImage"
-                            src={skill.imageURL}
-                            alt={'photo of ' + skill.name}
-                            style={{
-                                width: 90,
-                                height: 90
-                            }}
-                        />
-                        {skill.name}
-                    </Button>
-                </PopoverTrigger>
-                <PopoverContent>
-                    <div className="px-1 py-2">
-                    <div className="text-small font-bold">Projects using {skill.name}</div>
-                    {/* <ul>
-                        {skillProjects.map((project) => (
-                            <li key={project.id}>
-                                {project.name}: {project.description}
-                            </li>
-                        ))}
-                    </ul> */}
-                    </div>
-                </PopoverContent>
-            </Popover>
-          </li>
-        ))}
+        {skills.map((skill) => {
+            // Filter through projects and find the ones that match the skills list of project ids
+            const skillProjects = projects.filter(project => skill.projects.includes(project.id));
+
+            return(
+                <li key={skill.id}>
+                    <Popover placement="right">
+                        <PopoverTrigger>
+                            <Button>
+                                <img 
+                                    className="skillImage"
+                                    src={skill.imageURL}
+                                    alt={'photo of ' + skill.name}
+                                    style={{ width: 90, height: 90 }}
+                                />
+                                {skill.name}
+                            </Button>
+                        </PopoverTrigger>
+                        <PopoverContent>
+                            <div className="px-1 py-2">
+                            <div className="text-small font-bold">Projects using {skill.name}</div>
+                            <ul>
+                                {skillProjects.map((project) => (
+                                    <li key={project.id}>
+                                        <a href="#">{project.name}</a>
+                                    </li>
+                                ))}
+                            </ul>
+                            </div>
+                        </PopoverContent>
+                    </Popover>
+                </li>
+            );
+        })}
       </ul>
     </div>
   );

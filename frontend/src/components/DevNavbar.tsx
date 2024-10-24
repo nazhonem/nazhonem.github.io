@@ -1,3 +1,7 @@
+/* Navbar for Developer side of website.
+ * Displays Lettermark (home), toggle site, home, work, about, and contact.
+ */
+
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from '@nextui-org/react';
 
 export default function DevNavbar() {
@@ -16,7 +20,7 @@ export default function DevNavbar() {
       </NavbarContent>
   
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link color="foreground" href="#">
             Home
           </Link>
