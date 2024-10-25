@@ -17,19 +17,13 @@ export default function SkillsPopover() {
                 <li key={skill.id}>
                     <Popover placement="right">
                         <PopoverTrigger>
-                            <Button>
-                                {skill.imageURL}
-                                {/* <img 
-                                    className="skillImage"
-                                    src={skill.imageURL}
-                                    alt={'photo of ' + skill.name}
-                                    style={{ width: 90, height: 90 }}
-                                /> */}
-                                {skill.name}
+                            <Button className="p-3 ">
+                                <i className='text-4xl' aria-hidden='true'>{skill.imageURL}</i>
+                                <span className="text-md">{skill.name}</span>
                             </Button>
                         </PopoverTrigger>
                         <PopoverContent>
-                            <div className="px-1 py-2">
+                            <div className="px-1 py-2 shadow-md">
                             <div className="text-small font-bold">Projects using {skill.name}</div>
                             <ul>
                                 {skillProjects.map((project) => (

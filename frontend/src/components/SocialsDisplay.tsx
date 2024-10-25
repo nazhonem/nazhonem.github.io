@@ -5,7 +5,7 @@ export default function DevSocials() {
     <div style={{ display: 'flex', gap: '10px' }}>
       {socialLinks.map((social: SocialLink) => (
         social.dev ?
-          <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
+          <a key={social.id} className="text-2xl" href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
             {social.icon}
           </a>
         : null
@@ -19,7 +19,7 @@ export function ArtSocials() {
     <div style={{ display: 'flex', gap: '10px' }}>
       {socialLinks.map((social: SocialLink) => (
         !social.dev ?
-          <a key={social.id} href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
+          <a key={social.id} className="text-2xl" href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
             {social.icon}
           </a>
         : null
