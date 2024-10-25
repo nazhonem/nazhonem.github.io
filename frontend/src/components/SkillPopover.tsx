@@ -2,14 +2,14 @@
  * Each item has a popover component that has links to the projects that skill was used in.
  */
 
-import { skills, projects } from "../data/skillsProjects";
+import { allSkills, projects } from "../data/skillsProjects";
 import {Popover, PopoverTrigger, PopoverContent, Button} from "@nextui-org/react";
 
 export default function SkillsPopover() {
   return (
     <div>
       <ul>
-        {skills.map((skill) => {
+        {allSkills.map((skill) => {
             // Filter through projects and find the ones that match the skills list of project ids
             const skillProjects = projects.filter(project => skill.projects.includes(project.id));
 
