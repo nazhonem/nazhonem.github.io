@@ -18,12 +18,13 @@ export default function SkillsPopover() {
                     <Popover placement="right">
                         <PopoverTrigger>
                             <Button>
-                                <img 
+                                {skill.imageURL}
+                                {/* <img 
                                     className="skillImage"
                                     src={skill.imageURL}
                                     alt={'photo of ' + skill.name}
                                     style={{ width: 90, height: 90 }}
-                                />
+                                /> */}
                                 {skill.name}
                             </Button>
                         </PopoverTrigger>

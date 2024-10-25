@@ -1,22 +1,24 @@
+import { FaAtom, FaJava } from 'react-icons/fa';
+
 // List of skills
 export const allSkills = [
     {
       id: 1,
       name: 'React',
       projects: [1, 3],  // Referencing project IDs
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      imageURL: <FaAtom />,
     },
     {
       id: 2,
       name: 'TypeScript',
       projects: [1, 2],
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      imageURL: <FaAtom />,
     },
     {
       id: 3,
       name: 'Java',
       projects: [2, 3],
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      imageURL: <FaJava />,
     },
   ];
   

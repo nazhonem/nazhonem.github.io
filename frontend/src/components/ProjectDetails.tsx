@@ -34,7 +34,7 @@ export default function ProjectDetails({
         <ul>
         {projectSkills.map(skill => (
           <li key={skill.id}>
-            <img src={skill.imageURL} alt='{skill.name}' />
+            {skill.imageURL}
             {skill.name}
             </li>
         ))}
