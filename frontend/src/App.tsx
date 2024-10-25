@@ -44,13 +44,15 @@ export default function DevHome() {
         {/* Skills Section */}
         <div className="mx-auto  p-6 bg-white shadow-md rounded-lg text-center w-full md:w-auto">
           <h2 className="text-2xl font-semibold text-blue-600">Skills</h2>
-          <SkillPopover />
+          <div className="items-center mt-6">
+            <SkillPopover />
+          </div>
           <Button 
             as="a" 
             href="/Nazhone_Morgan_Resume-4.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-6 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md">
+            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md">
             View My Resume
           </Button>
         </div>
