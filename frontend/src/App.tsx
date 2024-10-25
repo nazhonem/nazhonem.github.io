@@ -1,10 +1,10 @@
 import DevNavbar from "./components/DevNavbar";
 import SkillPopover from "./components/SkillPopover";
-import DevSocials from "./components/DevSocials";
+import DevSocials from "./components/SocialsDisplay";
 import ProjectDetails from "./components/ProjectDetails";
 import { Button } from "@nextui-org/react";
 
-import { allSkills, projects } from "./data/skillsProjects";
+import { projects } from "./data/skillsProjects";
 
 export default function DevHome() {
   // featured projects
