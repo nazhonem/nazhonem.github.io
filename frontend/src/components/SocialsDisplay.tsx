@@ -2,7 +2,7 @@ import { socialLinks, SocialLink } from "../data/socialLinks";
 
 export default function DevSocials() {
   return (
-    <div style={{ display: 'flex', gap: '10px' }}>
+    <div className="flex gap-10">
       {socialLinks.map((social: SocialLink) => (
         social.dev ?
           <a key={social.id} className="text-2xl" href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
@@ -16,7 +16,7 @@ export default function DevSocials() {
 
 export function ArtSocials() {
   return (
-    <div style={{ display: 'flex', gap: '10px' }}>
+    <div className="flex gap-10">
       {socialLinks.map((social: SocialLink) => (
         !social.dev ?
           <a key={social.id} className="text-2xl" href={social.url} target="_blank" rel="noopener noreferrer" aria-label={social.name}>

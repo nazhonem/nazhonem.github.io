@@ -26,29 +26,34 @@ export default function ProjectDetails({
     const projectSkills = allSkills.filter((skill: { id: number; }) => skills.includes(skill.id));
 
     return (
-      <div className="project-details">
-        <h2>{name}</h2>
-        <img src={imageUrl} alt={`${name}`} className="project-image" />
-        <p>{description}</p>
-        <h4>Skills Used:</h4>
-        <ul>
-        {projectSkills.map(skill => (
-          <li key={skill.id}>
-            {skill.imageURL}
-            {skill.name}
-            </li>
-        ))}
-      </ul>
-        {srcLink && (
-          <a href={srcLink} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        )}
-        {prjLink && (
-          <a href={prjLink} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        )}
+      <div className="flex flex-col md:flex-row items-center p-6 mb-10">
+        {/* Project Image */}
+        <img src={imageUrl} alt={`${name}`} className="w-32 h-32 md:w-48 md:h-48 rounded-full object-cover mb-4 md:mb-0 md:mr-6" />
+
+        {/* Project Info */}
+        <div className="flex flex-col items-start text-left">
+          <h2 className="text-2xl md:text-4xl font-bold text-blue-600 mb-2">{name}</h2>
+          <p className="text-gray-700 mb-4">{description}</p>
+          <h4 className="text-lg font-semibold text-gray-500 mb-1">Made With:</h4>
+          <ul className="flex flex-wrap gap-2 mb-4">
+            {projectSkills.map(skill => (
+              <li key={skill.id} className="flex items-center text-blue-600 bg-blue-50 rounded px-2 py-1 text-sm">
+                <i className={`text-xl mr-1`} aria-hidden="true">{skill.imageURL}</i>
+                {skill.name}
+                </li>
+            ))}
+          </ul>
+          {srcLink && (
+            <a href={srcLink} target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          )}
+          {prjLink && (
+            <a href={prjLink} target="_blank" rel="noopener noreferrer">
+              View Project
+            </a>
+          )}
+        </div>
       </div>
     );
   }

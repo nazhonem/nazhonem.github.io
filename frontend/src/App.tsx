@@ -77,16 +77,16 @@ export default function DevHome() {
       <div className="p-6 bg-white">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             
-            <div className="flex flex-col items-start mb-6 md:mb-0 md:mr-6">
+            <div className="flex flex-col items-center mb-6 md:mb-0 md:mr-6 w-[40vw]">
               <h2 className="text-4xl font-semibold text-blue-600">Contact Me!</h2>
               <div className="mt-2">
                 <DevSocials />
               </div>
             </div>
             
-            <div className="text-center md:text-left">
-              <p className="text-lg">
-                Whether you want to hire me, hear more, or just grab a coffee, here’s where you can contact me.
+            <div className="text-center md:text-left w-[60vw]">
+              <p className="text-md">
+                If you have any questions about me or my projects, feel free to reach out! Here’s where you can contact me for anything concerning my web development work.
               </p>
               <p className="mt-2 text-blue-500">
                 Email me at <a href="mailto:nazhonem@gmail.com" className="underline">nazhonem@gmail.com</a>
