@@ -8,7 +8,7 @@ dist/
 *.css.map
 
 # React specific files
-build/
+#build/
 coverage/
 
 # TypeScript specific
