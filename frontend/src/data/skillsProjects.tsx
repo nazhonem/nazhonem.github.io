@@ -26,12 +26,12 @@ export const allSkills = [
   export const projects = [
     {
       id: 1,
-      name: 'Project Alpha',
+      name: 'The Wedding Seamstress',
       skills: [1, 2],  // Referencing skill IDs
-      description: 'A web application built with React and TypeScript.',
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      description: 'I led a full redesign of a Kajabi-based website, enhancing its user experience with a modern layout, optimized navigation, and a fresh visual style. The project included migrating content to a new platform, incorporating SEO best practices, and adding new features like a blog and podcast.',
+      imageURL: '/TWS.png',
       srcLink: '',
-      prjLink: '',
+      prjLink: 'https://theweddingseamstress.mykajabi.com/',
     },
     {
       id: 2,
