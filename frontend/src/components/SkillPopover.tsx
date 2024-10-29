@@ -7,7 +7,7 @@ import {Popover, PopoverTrigger, PopoverContent, Button} from "@nextui-org/react
 
 export default function SkillsPopover() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-8"> {/* Responsive grid with spacing */}
+    <div className="grid grid-cols-3 md:grid-cols-4 gap-8"> {/* Responsive grid with spacing */}
       {allSkills.map((skill) => {
           // Filter through projects and find the ones that match the skills list of project ids
           const skillProjects = projects.filter(project => skill.projects.includes(project.id));

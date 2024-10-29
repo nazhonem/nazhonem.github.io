@@ -28,7 +28,7 @@ export default function ProjectDetails({
     return (
       <div className="flex flex-col md:flex-row items-center p-6 mb-10">
         {/* Project Image */}
-        <img src={imageUrl} alt={`${name}`} className="w-48 h-48 md:w-64 md:h-64 object-cover mb-4 md:mb-0 md:mr-6" />
+        <img src={imageUrl} alt={`${name}`} className="h-48 md:h-64 object-cover mb-4 md:mb-0 md:mr-6" />
 
         {/* Project Info */}
         <div className="flex flex-col items-start text-left">

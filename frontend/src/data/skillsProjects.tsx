@@ -1,18 +1,20 @@
-import { FaAtom, FaJava } from 'react-icons/fa';
+import { FaCode, FaCss3Alt, FaDocker, FaFigma, FaGitAlt, FaHtml5, FaJava, FaJsSquare, FaLaptop, FaNodeJs, FaPython, FaReact } from 'react-icons/fa';
+import { BiLogoTypescript } from "react-icons/bi";
+import { SiCplusplus, SiHeroku, SiSpring, SiTailwindcss } from "react-icons/si";
 
 // List of skills
 export const allSkills = [
     {
       id: 1,
       name: 'React',
-      projects: [1, 3],  // Referencing project IDs
-      imageURL: <FaAtom />,
+      projects: [2, 3],  // Referencing project IDs
+      imageURL: <FaReact />,
     },
     {
       id: 2,
       name: 'TypeScript',
-      projects: [1, 2],
-      imageURL: <FaAtom />,
+      projects: [3],
+      imageURL: <BiLogoTypescript />,
     },
     {
       id: 3,
@@ -20,6 +22,90 @@ export const allSkills = [
       projects: [2, 3],
       imageURL: <FaJava />,
     },
+    {
+      id: 4,
+      name: 'Web Building',
+      projects: [1],
+      imageURL: <FaLaptop />,
+    },
+    {
+      id: 5,
+      name: 'JavaScript',
+      projects: [2],
+      imageURL: <FaJsSquare />,
+    },
+    {
+      id: 6,
+      name: 'Python',
+      projects: [1, 2],
+      imageURL: <FaPython />,
+    },
+    {
+      id: 7,
+      name: 'HTML5',
+      projects: [1, 2],
+      imageURL: <FaHtml5 />,
+    },
+    {
+      id: 8,
+      name: 'CSS',
+      projects: [1, 2],
+      imageURL: <FaCss3Alt />,
+    },
+    {
+      id: 9,
+      name: 'C/C++',
+      projects: [1, 2],
+      imageURL: <SiCplusplus />,
+    },
+    {
+      id: 10,
+      name: 'Tailwind',
+      projects: [3],
+      imageURL: <SiTailwindcss />,
+    },
+    {
+      id: 11,
+      name: 'Spring Boot',
+      projects: [2, 3],
+      imageURL: <SiSpring />,
+    },
+    {
+      id: 12,
+      name: 'RESTful APIs',
+      projects: [3],
+      imageURL: <FaCode/>,
+    },
+    {
+      id: 13,
+      name: 'Docker',
+      projects: [3],
+      imageURL: <FaDocker />,
+    },
+    {
+      id: 14,
+      name: 'Figma',
+      projects: [2, 3],
+      imageURL: <FaFigma />,
+    },
+    {
+      id: 15,
+      name: 'Git',
+      projects: [2, 3],
+      imageURL: <FaGitAlt />,
+    },
+    {
+      id: 16,
+      name: 'NodeJS',
+      projects: [2, 3],
+      imageURL: <FaNodeJs />,
+    },
+    // {
+    //   id: 17,
+    //   name: 'Heroku',
+    //   projects: [1, 2],
+    //   imageURL: <SiHeroku />,
+    // },
   ];
   
   // List of projects
@@ -27,7 +113,7 @@ export const allSkills = [
     {
       id: 1,
       name: 'The Wedding Seamstress',
-      skills: [1, 2],  // Referencing skill IDs
+      skills: [4],  // Referencing skill IDs
       description: 'I led a full redesign of a Kajabi-based website, enhancing its user experience with a modern layout, optimized navigation, and a fresh visual style. The project included migrating content to a new platform, incorporating SEO best practices, and adding new features like a blog and podcast.',
       imageURL: '/TWS.png',
       srcLink: '',
@@ -35,21 +121,21 @@ export const allSkills = [
     },
     {
       id: 2,
-      name: 'Project Beta',
-      skills: [2, 3],
-      description: 'An API built with TypeScript and Java.',
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      name: 'Personal Values',
+      skills: [1, 5, 3, 11, 14, 15, 16],
+      description: 'An app code framework developed using React Native and Spring Boot. Projected for deployment on Apple and Android platforms. I lead the process of taking design notes from the design team and integrating them into a smooth seamless User Interface.',
+      imageURL: '/figma-values.png',
       srcLink: '',
-      prjLink: '',
+      prjLink: 'https://www.figma.com/proto/Cz1dITI76oDtuvin8HEuMr/Space!?node-id=20-645&node-type=canvas&t=C77isTCrnirGo2ah-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3&show-proto-sidebar=1',
     },
     {
       id: 3,
-      name: 'Project Gamma',
-      skills: [1, 3],
-      description: 'A full-stack application with React and Java backend.',
-      imageURL: 'https://i.imgur.com/yXOvdOSs.jpg',
+      name: 'CANDLE',
+      skills: [1, 2, 3, 10, 11, 12, 13, 14, 15, 16],
+      description: 'A full stack application and business created during the Entreprenurial senior projects course. CANDLE is a social connection app that allows users to create wishlists for holidays and birthdays and see others.',
+      imageURL: '/CNDL.png',
       srcLink: '',
-      prjLink: '',
+      prjLink: 'https://www.figma.com/proto/P5nJOWiBRfJ81CYnbQ88T4/CNDL?node-id=119-4&starting-point-node-id=119%3A4&t=na7jBpIJCJKW9pSE-1',
     },
   ];
   

@@ -8,7 +8,7 @@ export default function DevNavbar() {
     return (
       <Navbar shouldHideOnScroll>
       <NavbarBrand>
-        <p className="font-bold text-inherit">ACME</p>
+        <img src={"/Lettermark.png"} alt="Logo" className="w-8" />
       </NavbarBrand>
   
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
