@@ -47,14 +47,14 @@ export default function DevHome() {
           <div className="items-center mt-6">
             <SkillPopover />
           </div>
-          <Button 
+          {/* <Button 
             as="a" 
             href="/Nazhone_Morgan_Resume-4.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md">
             View My Resume
-          </Button>
+          </Button> */}
         </div>
 
         {/* Highlighted Project Section */}

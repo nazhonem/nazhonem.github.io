@@ -37,25 +37,25 @@ export const allSkills = [
     {
       id: 6,
       name: 'Python',
-      projects: [1, 2],
+      projects: [],
       imageURL: <FaPython />,
     },
     {
       id: 7,
       name: 'HTML5',
-      projects: [1, 2],
+      projects: [],
       imageURL: <FaHtml5 />,
     },
     {
       id: 8,
       name: 'CSS',
-      projects: [1, 2],
+      projects: [],
       imageURL: <FaCss3Alt />,
     },
     {
       id: 9,
       name: 'C/C++',
-      projects: [1, 2],
+      projects: [],
       imageURL: <SiCplusplus />,
     },
     {
