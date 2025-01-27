@@ -3,7 +3,7 @@
  * actual project.
 */
 
-import { allSkills } from "../../../../../frontend/src/data/skillsProjects";
+import { allSkills } from "../data/skillsProjects";
 
 interface ProjectDetailsProps {
     name: string;
