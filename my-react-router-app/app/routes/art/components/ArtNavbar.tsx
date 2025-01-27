@@ -45,6 +45,11 @@ export default function ArtNavbar() {
             Contact
           </Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="/art/commission">
+            Commissions
+          </Link>
+        </NavbarItem>
       </NavbarContent>
     </Navbar>
     );
