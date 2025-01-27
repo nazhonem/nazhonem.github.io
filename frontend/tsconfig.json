@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "../my-react-router-app/app/routes/cs_dev/components"  ]
 }

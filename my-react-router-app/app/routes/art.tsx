@@ -1,6 +1,6 @@
 import { Outlet } from "react-router";
 
-export default function DevHome() {
+export default function ArtHome() {
   return (
     <div>
       {/* will either be home.tsx or settings.tsx */}

@@ -14,12 +14,12 @@ import {
         route("contact", "./routes/cs_dev/contact.tsx"),
     ]),
     
-    // route("art", "./art.tsx", [
-    //     index("./home.tsx"),
-    //     route("work", "./art/work.tsx"),
-    //     route("contact", "./art/contact.tsx"),
-    //     route("commission", "./art/commission.tsx"),
-    // ]),
+    route("art", "./routes/art.tsx", [
+        index("./routes/art/home.tsx"),
+        route("work", "./routes/art/work.tsx"),
+        route("contact", "./routes/art/contact.tsx"),
+        route("commission", "./routes/art/commissions.tsx"),
+    ]),
 
   ] satisfies RouteConfig;
   

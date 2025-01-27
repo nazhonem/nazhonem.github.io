@@ -2,10 +2,10 @@
  * Features an intro, skills, and projects.
  */
 
-import DevNavbar from "./components/DevNavbar";
-import SkillPopover from "./components/SkillPopover";
-import DevSocials from "./components/SocialsDisplay";
-import ProjectDetails from "./components/ProjectDetails";
+import DevNavbar from "../../my-react-router-app/app/routes/cs_dev/components/DevNavbar";
+import SkillPopover from "../../my-react-router-app/app/routes/cs_dev/components/SkillPopover";
+import DevSocials from "../../my-react-router-app/app/routes/cs_dev/components/SocialsDisplay";
+import ProjectDetails from "../../my-react-router-app/app/routes/cs_dev/components/ProjectDetails";
 import { Button } from "@nextui-org/react";
 import { projects } from "./data/skillsProjects";
 

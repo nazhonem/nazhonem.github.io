@@ -1,4 +1,4 @@
-import { socialLinks, SocialLink } from "../data/socialLinks";
+import { socialLinks, SocialLink } from "../../../../../frontend/src/data/socialLinks";
 
 export default function DevSocials() {
   return (

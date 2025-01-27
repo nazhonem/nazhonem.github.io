@@ -2,8 +2,8 @@
  * Each item has a popover component that has links to the projects that skill was used in.
  */
 
-import { allSkills, projects } from "../data/skillsProjects";
-import {Popover, PopoverTrigger, PopoverContent, Button} from "@nextui-org/react";
+import { allSkills, projects } from "../../../../../frontend/src/data/skillsProjects";
+import {Popover, PopoverTrigger, PopoverContent, Button} from "@heroui/react";
 import { useState } from "react";
 
 export default function SkillsPopover() {
