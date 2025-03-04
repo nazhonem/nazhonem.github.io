@@ -7,7 +7,7 @@ import SkillPopover from "./components/SkillPopover";
 // import DevSocials from "./components/SocialsDisplay";
 // import ProjectDetails from "./components/ProjectDetails";
 import {Button} from "@heroui/button";
-// import { projects } from "./data/skillsProjects";
+import { projects } from "./data/skillsProjects";
 
 export default function DevHome() {
   // Featured project IDs
@@ -67,17 +67,12 @@ export default function DevHome() {
 
         {/* Highlighted Project Section */}
         <div className="p-6 my-6">
-        {/* {featuredProjects.map((project) => (
-          <ProjectDetails
-            key={project.id}
-            name={project.name}
-            description={project.description}
-            imageUrl={project.imageURL}
-            srcLink={project.srcLink}
-            prjLink={project.prjLink}
-            skills={project.skills}
-          />
-        ))} */}
+          <h2>Selected Projects</h2>
+          <div className="gallery">
+            {projects.map((project) => (
+              <img key={project.id} src={project.imageUrl} alt={`Img ${project.id}`} />
+            ))}
+          </div>
         </div>
       </div>
 

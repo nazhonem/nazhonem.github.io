@@ -24,6 +24,7 @@ export const projects = [
     {
         id: 0,
         name: 'The Wedding Seamstress',
+        imageUrl: 'TWS.png',
         desc: 'Website',
         skills: ['React', 'Java'],
         srcLink: '',
@@ -32,6 +33,7 @@ export const projects = [
     {
         id: 1,
         name: 'CANDLE',
+        imageUrl: 'CNDL.png',
         desc: 'Brand',
         skills: ['React', 'Java'],
         srcLink: '',
@@ -40,6 +42,7 @@ export const projects = [
     {
         id: 2,
         name: 'Values',
+        imageUrl: 'figma-values.png',
         desc: 'App',
         skills: ['React', 'Java'],
         srcLink: '',
