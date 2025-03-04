@@ -2,6 +2,51 @@
 // import { BiLogoTypescript } from "react-icons/bi";
 // import { SiCplusplus, SiHeroku, SiSpring, SiTailwindcss } from "react-icons/si";
 
+export const skills = [
+    {
+        name: 'React',
+        imageURL: '',
+        projects: [0, 2]
+    },
+    {
+        name: 'TypeScript',
+        imageURL: '',
+        projects: [1, 2]
+    },
+    {
+        name: 'Java',
+        imageURL: '',
+        projects: [0]
+    }
+]
+
+export const projects = [
+    {
+        id: 0,
+        name: 'The Wedding Seamstress',
+        desc: 'Website',
+        skills: ['React', 'Java'],
+        srcLink: '',
+        prjLink: ''
+    },
+    {
+        id: 1,
+        name: 'CANDLE',
+        desc: 'Brand',
+        skills: ['React', 'Java'],
+        srcLink: '',
+        prjLink: ''
+    },
+    {
+        id: 2,
+        name: 'Values',
+        desc: 'App',
+        skills: ['React', 'Java'],
+        srcLink: '',
+        prjLink: ''
+    }
+]
+
 // // List of skills
 // export const allSkills = [
 //     {

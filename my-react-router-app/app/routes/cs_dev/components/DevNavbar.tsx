@@ -36,7 +36,7 @@ export default function DevNavbar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/cs_dev/work">
+          <Link color="foreground" href="/cs_dev/work">
             Work
           </Link>
         </NavbarItem>

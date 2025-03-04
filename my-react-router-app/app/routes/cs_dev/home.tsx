@@ -3,9 +3,9 @@
  */
 
 import DevNavbar from "./components/DevNavbar";
-// import SkillPopover from "./components/SkillPopover";
+import SkillPopover from "./components/SkillPopover";
 // import DevSocials from "./components/SocialsDisplay";
-import ProjectDetails from "./components/ProjectDetails";
+// import ProjectDetails from "./components/ProjectDetails";
 import {Button} from "@heroui/button";
 // import { projects } from "./data/skillsProjects";
 
@@ -45,7 +45,7 @@ export default function DevHome() {
         <div className="mx-auto  p-6 bg-white shadow-md rounded-lg text-center w-full md:w-auto">
           <h2 className="text-2xl font-semibold text-blue-600">Skills</h2>
           <div className="items-center mt-6">
-            {/* <SkillPopover /> */}
+            <SkillPopover />
           </div>
           {/* <Button 
             as="a" 

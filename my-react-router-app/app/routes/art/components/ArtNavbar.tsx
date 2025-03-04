@@ -36,7 +36,7 @@ export default function ArtNavbar() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="/art/work">
+          <Link color="foreground" href="/art/work">
             Work
           </Link>
         </NavbarItem>
