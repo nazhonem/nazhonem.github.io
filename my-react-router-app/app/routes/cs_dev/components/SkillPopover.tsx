@@ -10,7 +10,7 @@ export default function SkillsPopover() {
     return (
         <div className="flex flex-wrap gap-4">
             {skills.map((skill) => (
-                <Popover showArrow backdrop="opaque" placement="bottom">
+                <Popover showArrow backdrop="opaque" placement="right">
                     <PopoverTrigger>
                         <Button className="capitalize" color="warning" variant="flat">
                             {skill.name}

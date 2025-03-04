@@ -24,7 +24,7 @@ export default function DevHome() {
       {/* Desktop Image */}
       <div className="hidden md:block absolute right-[0] mt-5 h-[120vh] w-[120vh] rounded-full bg-contain transform translate-x-1/4 z-0" 
         style={{
-          backgroundImage: "url('/me.jpg')"
+          backgroundImage: "url(/me.jpg)"
         }}>
       </div>
 
@@ -37,6 +37,22 @@ export default function DevHome() {
           <p className="text-gray-500 italic">/nuh-ZHOH-nay MOR-gan/</p>
           <p className="mt-2 w-[75%] text-lg">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
+          <Button 
+            as="a" 
+            href="#" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md m-5">
+            See my work
+          </Button>
+          <Button 
+            as="a" 
+            href="/Nazhone_Morgan_Resume-4.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md m-5">
+            View My Resume
+          </Button>
             {/* <DevSocials />  */}
           </div>
         </div>
@@ -47,14 +63,6 @@ export default function DevHome() {
           <div className="items-center mt-6">
             <SkillPopover />
           </div>
-          {/* <Button 
-            as="a" 
-            href="/Nazhone_Morgan_Resume-4.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md">
-            View My Resume
-          </Button> */}
         </div>
 
         {/* Highlighted Project Section */}
