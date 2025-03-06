@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,5 +9,9 @@ body {
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
+  }
+
+  @theme {
+    --font-josefin: "Josefin Sans", sans-serif;
   }
 }

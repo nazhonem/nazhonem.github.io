@@ -18,8 +18,29 @@ export default {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"',
+          '"Josefin Sans"'
         ],
       },
+      colors: {
+        transparent: 'transparent',
+        white: '#ffffff',
+        black: '#000000',
+        background: {
+          light: '#ffffff',
+          DEFAULT: '#000000',
+          dark: '#000000'
+        },
+        foreground: {
+          light: '#11181C',
+          DEFAULT: '#ffffff',
+          dark: '#ffffff'
+        },
+        border: {
+          light: '#00000026',
+          DEFAULT: '#00000026',
+          dark: '#ffffff26'
+        },
+      }
     },
   },
   darkMode: "class",

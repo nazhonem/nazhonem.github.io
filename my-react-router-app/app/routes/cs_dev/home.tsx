@@ -19,7 +19,7 @@ export default function DevHome() {
 //   );
 
   return (
-    <div className="min-h-screen bg-slate-200 text-gray-900">
+    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
       <DevNavbar />
       {/* Desktop Image */}
       <div className="hidden md:block absolute right-[0] mt-5 h-[120vh] w-[120vh] rounded-full bg-contain transform translate-x-1/4 z-0" 
@@ -35,7 +35,7 @@ export default function DevHome() {
         <div className="md:w-[45vw] bg-white text-center min-h-[70vh] flex flex-col items-center justify-center">
           <h1 className="text-6xl font-bold text-blue-600">Nazhoné Morgan</h1>
           <p className="text-gray-500 italic">/nuh-ZHOH-nay MOR-gan/</p>
-          <p className="mt-2 w-[75%] text-lg">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
+          <p className="mt-2 w-[75%] text-lg font-josefin">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
           <Button 
             as="a" 

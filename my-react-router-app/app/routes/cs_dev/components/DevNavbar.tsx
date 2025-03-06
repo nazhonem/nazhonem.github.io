@@ -7,27 +7,19 @@ import {
   NavbarBrand, 
   NavbarContent, 
   NavbarItem, 
-  Button,
   Link,
   // NavbarMenuToggle,
   // NavbarMenu,
   // NavbarMenuItem
 } from "@heroui/react";
+import {Divider} from "@heroui/divider";
 
 export default function DevNavbar() {
     return (
-      <Navbar shouldHideOnScroll>
+      <Navbar shouldHideOnScroll className="bg-transparent">
       <NavbarBrand>
-        <img src={"/Lettermark.png"} alt="Logo" className="w-8" />
+        <p className="text-white font-josefin">NM</p>
       </NavbarBrand>
-  
-      {/* <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Button color="primary" href="#">
-            Web Dev
-          </Button>
-        </NavbarItem>
-      </NavbarContent> */}
   
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
@@ -35,11 +27,13 @@ export default function DevNavbar() {
             Home
           </Link>
         </NavbarItem>
+        <NavbarItem><p className="text-white">•</p></NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/cs_dev/work">
             Work
           </Link>
         </NavbarItem>
+        <NavbarItem><p className="text-white">•</p></NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="/cs_dev/contact">
             Contact
