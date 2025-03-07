@@ -26,10 +26,12 @@ export default function DevHome() {
       <div className="relative md:mx-20 z-10 p-6 space-y-10">
         
         {/* Intro Section */}
-        <div className="md:w-[45vw] bg-white text-center min-h-[70vh] flex flex-col items-center justify-center">
-          <h1 className="text-6xl text-primary-50 font-bold">Nazhoné Morgan</h1>
-          <p className="text-gray-500 italic">/nuh-ZHOH-nay MOR-gan/</p>
-          <p className="mt-2 w-[75%] text-lg font-josefin">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
+        <div className="md:w-[45vw] min-h-[35vh] flex flex-col justify-end p-20">
+          <h1 className="text-7xl text-white font-bold">Nazhoné Morgan</h1>
+          <p className="text-white italic text-right">/nuh-ZHOH-nay MOR-gan/</p>
+        </div>
+        <div className="md:w-[45vw] bg-white text-center min-h-[35vh] flex flex-col items-center justify-center">
+          <p className="mt-2 w-[75%] text-lg">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
           <Button 
             as="a" 
