@@ -10,17 +10,11 @@ import {Button} from "@heroui/button";
 import { projects } from "./data/skillsProjects";
 
 export default function DevHome() {
-  // Featured project IDs
-//   const featuredProjectIds = [1, 2, 3];
-
-  // Filter featured projects
-//   const featuredProjects = projects.filter((project) =>
-//     featuredProjectIds.includes(project.id)
-//   );
-
   return (
-    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+    <div className="purple-dark bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+
       <DevNavbar />
+
       {/* Desktop Image */}
       <div className="hidden md:block absolute right-[0] mt-5 h-[120vh] w-[120vh] rounded-full bg-contain transform translate-x-1/4 z-0" 
         style={{
@@ -33,7 +27,7 @@ export default function DevHome() {
         
         {/* Intro Section */}
         <div className="md:w-[45vw] bg-white text-center min-h-[70vh] flex flex-col items-center justify-center">
-          <h1 className="text-6xl font-bold text-blue-600">Nazhoné Morgan</h1>
+          <h1 className="text-6xl text-primary-50 font-bold">Nazhoné Morgan</h1>
           <p className="text-gray-500 italic">/nuh-ZHOH-nay MOR-gan/</p>
           <p className="mt-2 w-[75%] text-lg font-josefin">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
@@ -42,7 +36,10 @@ export default function DevHome() {
             href="#" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md m-5">
+            color="primary"
+            variant="solid"
+            className="mt-10 p-2 rounded-md m-5"
+          >
             See my work
           </Button>
           <Button 
@@ -50,7 +47,9 @@ export default function DevHome() {
             href="/Nazhone_Morgan_Resume-4.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="mt-10 bg-blue-500 text-white hover:bg-blue-600 p-2 rounded-md m-5">
+            color="primary"
+            variant="ghost"
+            className="mt-10 p-2 rounded-md m-5">
             View My Resume
           </Button>
             {/* <DevSocials />  */}
@@ -59,7 +58,7 @@ export default function DevHome() {
 
         {/* Skills Section */}
         <div className="mx-auto  p-6 bg-white shadow-md rounded-lg text-center w-full md:w-auto">
-          <h2 className="text-2xl font-semibold text-blue-600">Skills</h2>
+          <h2 className="text-2xl font-semibold text-primary-50">Skills</h2>
           <div className="items-center mt-6">
             <SkillPopover />
           </div>
@@ -67,7 +66,7 @@ export default function DevHome() {
 
         {/* Highlighted Project Section */}
         <div className="p-6 my-6">
-          <h2>Selected Projects</h2>
+          <h2 className="text-2xl font-semibold text-primary-50">Selected Projects</h2>
           <div className="gallery">
             {projects.map((project) => (
               <img key={project.id} src={project.imageUrl} alt={`Img ${project.id}`} />
@@ -81,7 +80,7 @@ export default function DevHome() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
             
             <div className="flex flex-col items-center mb-6 md:mb-0 md:mr-6 w-[40vw]">
-              <h2 className="text-4xl font-semibold text-blue-600">Contact Me!</h2>
+              <h2 className="text-4xl font-semibold text-primary-50">Contact Me!</h2>
               <div className="mt-2">
                 {/* <DevSocials /> */}
               </div>
@@ -91,7 +90,7 @@ export default function DevHome() {
               <p className="text-md">
                 If you have any questions about me or my projects, feel free to reach out! Here’s where you can contact me for anything concerning my web development work.
               </p>
-              <p className="mt-2 text-blue-500">
+              <p className="mt-2 text-primary-500">
                 Email me at <a href="mailto:nazhonem@gmail.com" className="underline">nazhonem@gmail.com</a>
               </p>
             </div>

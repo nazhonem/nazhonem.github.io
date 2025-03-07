@@ -10,8 +10,4 @@ body {
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
-
-  @theme {
-    --font-josefin: "Josefin Sans", sans-serif;
-  }
 }
