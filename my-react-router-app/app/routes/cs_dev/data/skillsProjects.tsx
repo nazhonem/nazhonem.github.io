@@ -25,7 +25,7 @@ export const projects = [
         id: 0,
         name: 'The Wedding Seamstress',
         imageUrl: 'TWS.png',
-        desc: 'Website',
+        desc: 'I led a full redesign of a Kajabi-based website, enhancing its user experience with a modern layout, optimized navigation, and a fresh visual style. The project included migrating content to a new platform, incorporating SEO best practices, and adding new features like a blog and podcast.',
         skills: ['React', 'Java'],
         srcLink: '',
         prjLink: ''
@@ -34,7 +34,7 @@ export const projects = [
         id: 1,
         name: 'CANDLE',
         imageUrl: 'CNDL.png',
-        desc: 'Brand',
+        desc: 'An app code framework developed using React Native and Spring Boot. Projected for deployment on Apple and Android platforms. I lead the process of taking design notes from the design team and integrating them into a smooth seamless User Interface.',
         skills: ['React', 'Java'],
         srcLink: '',
         prjLink: ''
@@ -43,7 +43,7 @@ export const projects = [
         id: 2,
         name: 'Values',
         imageUrl: 'figma-values.png',
-        desc: 'App',
+        desc: 'A full stack application and business created during the Entreprenurial senior projects course. CANDLE is a social connection app that allows users to create wishlists for holidays and birthdays and see others.',
         skills: ['React', 'Java'],
         srcLink: '',
         prjLink: ''

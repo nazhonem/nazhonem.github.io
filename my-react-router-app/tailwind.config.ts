@@ -25,7 +25,6 @@ export default {
   },
   darkMode: "class",
  plugins: [heroui({
-    addCommonColors: true,
     themes: {
       "purple-dark": {
         extend: "dark", 

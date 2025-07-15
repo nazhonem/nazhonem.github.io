@@ -26,11 +26,11 @@ export default function DevHome() {
       <div className="relative md:mx-20 z-10 p-6 space-y-10">
         
         {/* Intro Section */}
-        <div className="md:w-[45vw] min-h-[35vh] flex flex-col justify-end p-20">
+        <div className="md:w-[45vw] min-h-[30vh] flex flex-col justify-end p-20 pb-10">
           <h1 className="text-7xl text-white font-bold">Nazhoné Morgan</h1>
           <p className="text-white italic text-right">/nuh-ZHOH-nay MOR-gan/</p>
         </div>
-        <div className="md:w-[45vw] bg-white text-center min-h-[35vh] flex flex-col items-center justify-center">
+        <div className="md:w-[45vw] bg-white text-center min-h-[40vh] flex flex-col items-center justify-center rounded-lg">
           <p className="mt-2 w-[75%] text-lg">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
           <Button 
@@ -61,17 +61,23 @@ export default function DevHome() {
         {/* Skills Section */}
         <div className="mx-auto  p-6 bg-white shadow-md rounded-lg text-center w-full md:w-auto">
           <h2 className="text-2xl font-semibold text-primary-50">Skills</h2>
-          <div className="items-center mt-6">
+          <div className="purple-dark items-center mt-6">
             <SkillPopover />
           </div>
         </div>
 
         {/* Highlighted Project Section */}
         <div className="p-6 my-6">
-          <h2 className="text-2xl font-semibold text-primary-50">Selected Projects</h2>
+          <h2 className="text-3xl font-semibold text-white">Selected Projects</h2>
           <div className="gallery">
             {projects.map((project) => (
-              <img key={project.id} src={project.imageUrl} alt={`Img ${project.id}`} />
+              <div className="p-6">
+                <img className="h-lg max-h-md mx-auto rounded-lg" key={project.id} src={project.imageUrl} alt={`Img ${project.id}`} />
+                <h3 className="text-2xl font-semibold text-white mt-5">{project.name}</h3>
+                <p className="text-md text-white">
+                  {project.desc}
+                </p>
+              </div>
             ))}
           </div>
         </div>
