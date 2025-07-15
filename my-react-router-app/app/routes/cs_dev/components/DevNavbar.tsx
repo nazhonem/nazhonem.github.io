@@ -23,19 +23,19 @@ export default function DevNavbar() {
   
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page">
+          <Link color="foreground" href="/cs_dev" aria-current="page">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem><p className="text-white">•</p></NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/cs_dev/work">
+          <Link color="foreground" href="/cs_dev/construction">
             Work
           </Link>
         </NavbarItem>
         <NavbarItem><p className="text-white">•</p></NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/cs_dev/contact">
+          <Link color="foreground" href="/cs_dev/construction">
             Contact
           </Link>
         </NavbarItem>
