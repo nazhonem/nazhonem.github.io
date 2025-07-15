@@ -1,0 +1,1 @@
+import{w as t}from"./with-props-C4hFCt5Y.js";import{l as s,O as e}from"./chunk-SYFQ2XB5-Ds6VJ359.js";const m=t(function(){return s.jsx("div",{className:"purple-dark",children:s.jsx(e,{})})});export{m as default};
