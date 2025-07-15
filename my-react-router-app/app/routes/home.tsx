@@ -19,7 +19,7 @@ export default function Home() {
       <div className="w-full mx-auto mt-8 max-w-[260px] border-small px-1 py-2 rounded-small border-default-200 dark:border-default-100">
         <Listbox aria-label="Links">
           <ListboxItem key="Web Dev"><NavLink to="/cs_dev" end>Web Dev</NavLink></ListboxItem>
-          <ListboxItem key="Art"><NavLink to="/art" end>Art</NavLink></ListboxItem>
+          <ListboxItem key="Art"><NavLink to="https://mitranova.carrd.co/#" end>Art</NavLink></ListboxItem>
         </Listbox>
       </div>
     </div>
