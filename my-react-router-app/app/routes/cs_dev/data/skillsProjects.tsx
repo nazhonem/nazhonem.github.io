@@ -17,7 +17,97 @@ export const skills = [
         name: 'Java',
         imageURL: '',
         projects: [0]
-    }
+    },
+    {
+        name: 'Web Building',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'JavaScript',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Python',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'HTML5',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'CSS',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'C/C++',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Tailwind',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Spring Boot',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'RESTful APIs',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Docker',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Figma',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Git',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'NodeJS',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'SQL',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Relational Databases',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Photoshop',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Adobe Suite',
+        imageURL: '',
+        projects: [0]
+    },
+    {
+        name: 'Microsoft Office',
+        imageURL: '',
+        projects: [0]
+    },
 ]
 
 export const projects = [

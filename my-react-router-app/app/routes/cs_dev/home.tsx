@@ -33,7 +33,7 @@ export default function DevHome() {
         <div className="md:w-[45vw] bg-white text-center min-h-[40vh] flex flex-col items-center justify-center rounded-lg">
           <p className="mt-2 w-[75%] text-lg">A passionate and dedicated software developer with a strong eye for detail and aesthetics. I thrive on creating user-friendly applications that solve real-world problems.</p>
           <div className="mt-4">
-          <Button 
+          {/* <Button 
             as="a" 
             href="#" 
             target="_blank" 
@@ -43,10 +43,10 @@ export default function DevHome() {
             className="mt-10 p-2 rounded-md m-5"
           >
             See my work
-          </Button>
+          </Button> */}
           <Button 
             as="a" 
-            href="/Nazhone_Morgan_Resume-4.pdf" 
+            href="/NazhoneM_Software_Resume-1.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             color="primary"
@@ -62,7 +62,7 @@ export default function DevHome() {
         <div className="mx-auto  p-6 bg-white shadow-md rounded-lg text-center w-full md:w-auto">
           <h2 className="text-2xl font-semibold text-primary-50">Skills</h2>
           <div className="purple-dark items-center mt-6">
-            <SkillPopover />
+            <SkillPopover /> 
           </div>
         </div>
 
