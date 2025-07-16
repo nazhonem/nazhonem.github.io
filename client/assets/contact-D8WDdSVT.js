@@ -1,0 +1,1 @@
+import{w as o}from"./with-props-C4hFCt5Y.js";import{l as t}from"./chunk-SYFQ2XB5-Ds6VJ359.js";const c=o(function(){return t.jsx("div",{children:t.jsx("h1",{children:"Contact"})})});export{c as default};
