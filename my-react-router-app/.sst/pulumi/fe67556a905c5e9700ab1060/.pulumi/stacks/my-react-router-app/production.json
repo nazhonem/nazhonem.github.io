@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "checkpoint": {
+        "stack": "organization/my-react-router-app/production",
+        "latest": {
+            "manifest": {
+                "time": "2025-08-14T15:56:35.4257437-06:00",
+                "magic": "77be084e65c763fde87b290a0a6ba5aaacad687cde41d20d76768df34b0db77a",
+                "version": "v3.146.0"
+            },
+            "secrets_providers": {
+                "type": "passphrase",
+                "state": {
+                    "salt": "v1:6jdGAORWDko=:v1:PWWF4brI1aRJzv2s:hzlMv8DDWRLllAFruAchPerQzY3Mcg=="
+                }
+            },
+            "resources": [
+                {
+                    "urn": "urn:pulumi:production::my-react-router-app::pulumi:pulumi:Stack::my-react-router-app-production",
+                    "custom": false,
+                    "type": "pulumi:pulumi:Stack",
+                    "outputs": {
+                        "_protect": false
+                    },
+                    "created": "2025-08-14T21:56:32.4772465Z",
+                    "modified": "2025-08-14T21:56:32.4772465Z"
+                }
+            ],
+            "metadata": {}
+        }
+    }
+}

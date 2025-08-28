@@ -1,0 +1,34 @@
+
+  .sst/platform/sst.config.1755800416522.mjs ─── 26.4kb ─ 100.0%
+   ├ .sst/platform/src/components/component.ts ─ 13.9kb ── 52.6%
+   │  └ .sst/platform/src/components/linkable.ts
+   │     └ .sst/platform/src/components/index.ts
+   │        └ sst.config.ts
+   │           └ eval.ts
+   ├ .sst/platform/src/components/link.ts ─────── 4.2kb ── 16.0%
+   │  └ .sst/platform/src/auto/run.ts
+   │     └ eval.ts
+   ├ .sst/platform/src/components/linkable.ts ─── 2.6kb ── 10.0%
+   │  └ .sst/platform/src/components/index.ts
+   │     └ sst.config.ts
+   │        └ eval.ts
+   ├ .sst/platform/src/auto/run.ts ────────────── 1.9kb ─── 7.0%
+   │  └ eval.ts
+   ├ .sst/platform/src/components/naming.ts ───── 1.4kb ─── 5.4%
+   │  └ .sst/platform/src/components/component.ts
+   │     └ .sst/platform/src/components/linkable.ts
+   │        └ .sst/platform/src/components/index.ts
+   │           └ sst.config.ts
+   │              └ eval.ts
+   ├ <define:$cli> ────────────────────────────── 368b ──── 1.4%
+   │  └ eval.ts
+   ├ sst.config.ts ────────────────────────────── 316b ──── 1.2%
+   │  └ eval.ts
+   ├ <define:$app> ────────────────────────────── 301b ──── 1.1%
+   │  └ eval.ts
+   ├ .sst/platform/src/shim/run.js ────────────── 216b ──── 0.8%
+   ├ .sst/platform/src/components/error.ts ────── 107b ──── 0.4%
+   │  └ .sst/platform/src/auto/run.ts
+   │     └ eval.ts
+   ├ eval.ts ───────────────────────────────────── 75b ──── 0.3%
+   └ .sst/platform/src/config.ts ───────────────── 44b ──── 0.2%
