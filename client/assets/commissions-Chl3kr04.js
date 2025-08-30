@@ -1,1 +1,0 @@
-import{w as s}from"./with-props-C4hFCt5Y.js";import{l as o}from"./chunk-SYFQ2XB5-Ds6VJ359.js";const t=s(function(){return o.jsx("div",{children:o.jsx("h1",{children:"Commissions"})})});export{t as default};
