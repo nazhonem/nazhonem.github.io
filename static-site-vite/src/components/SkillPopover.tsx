@@ -7,27 +7,30 @@ import { Popover, PopoverTrigger, PopoverContent, Button } from "@heroui/react";
 
 export default function SkillsPopover() {
     return (
-        <div className="purple-dark flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-4">
             {skills.map((skill) => (
                 <div>
-                <Button className="capitalize" color="primary">
-                    {skill.name}
-                </Button>
                 <Popover showArrow backdrop="opaque" placement="right">
                     <PopoverTrigger>
-                        <Button className="capitalize" color="primary" variant="flat">
+                        <Button className="capitalize text-primary" color="primary" variant="flat">
                             {skill.name}
                         </Button>
                     </PopoverTrigger>
                     <PopoverContent className="w-240px">
-                        <div className="px-1 py-2 w-full text-primary-500">
+                        <div className="px-1 py-2 w-full">
                             <p className="text-small font-bold">
                                 Projects used
                             </p>
                             <ul>
                                 {projects.filter(project => skill.projects.includes(project.id)).map((project) => (
                                     <li key={project.id}>
-                                        <a href="#" className="hover:underline">{project.name}</a>
+                                        <a 
+                                            href="#" 
+                                            className="text-primary-500"
+                                            // className="hover:underline"
+                                        >
+                                            {project.name}
+                                        </a>
                                     </li>
                                 ))}
                             </ul>

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+@import "tailwindcss";
+@layer theme, base, components, utilities;
+
+@plugin './hero.ts';
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@theme {
+  --color-primary: #DD62ED;
+  --color-primary-50: #3B096C;
+  --color-primary-500: #DD62ED;
+  --color-primary-foreground: #ffffff;
+  --font-josefin: 'Josefin Sans', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --radius-lg: 1rem;
+}

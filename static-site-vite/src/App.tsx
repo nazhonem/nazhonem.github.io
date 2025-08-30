@@ -2,7 +2,6 @@
  * Features an intro, skills, and projects.
  */
 
-import './App.css';
 import DevNavbar from "./components/DevNavbar";
 import SkillPopover from "./components/SkillPopover";
 // import DevSocials from "./components/SocialsDisplay";
@@ -13,7 +12,7 @@ import { projects } from "./data/skillsProjects";
 function App() {
 
   return (
-    <div className="purple-dark bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+    <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
 
       <DevNavbar />
 
@@ -29,7 +28,7 @@ function App() {
         
         {/* Intro Section */}
         <div className="md:w-[45vw] min-h-[30vh] flex flex-col justify-end p-20 pb-10">
-          <h1 className="text-7xl text-white">Nazhoné Morgan</h1>
+          <h1 className="text-7xl text-white font-josefin font-bold">Nazhoné Morgan</h1>
           <p className="text-white italic text-right">/nuh-ZHOH-nay MOR-gan/</p>
         </div>
         <div className="md:w-[45vw] bg-white text-center min-h-[40vh] flex flex-col items-center justify-center rounded-lg">
@@ -40,7 +39,7 @@ function App() {
             href="/NazhoneM_Software_Resume-1.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
-            color="warning"
+            color="primary"
             variant="ghost"
             className="mt-10 p-2 rounded-md m-5">
             View My Resume
